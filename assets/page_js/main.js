@@ -1,26 +1,24 @@
 $(document).ready(function(){
     const code_teams = `
     <code>
-    {
-        <br>
-        "_id": "616eef56b7abe91c341edb0e",
-        <br>
-        "city": "Piraeus",
-        <br>
-        "titles": 46,
-        <br>
-        "teams": "Olympiacos",
-        <br>
-        "updated": "19/10/2021"
-        <br>
-    },<br>
-    { <br>
-        "_id": "616eef56b7abe91c341edb0f",<br>
-        "city": "Athens",<br>
-        "titles": 32,<br>
-        "teams": ["Panathinaikos","AEK"], <br>
+    {<br>
+        "_id": "616f06449c3aa80d0fa8d083", <br>
+        "team": "Olympiacos",<br>
+        "seasons": 63,<br>
+        "city": "Piraeus,Athens",<br>
+        "founded": 1925,<br>
+        "full_name": "Ολυμπιακός Σύνδεσμος Φιλάθλων Πειραιώς,Olympiakós Sýndesmos Filáthlo̱n Peiraió̱s",<br>
         "updated": "19/10/2021"<br>
-    }
+    },<br>
+    {<br>
+        "_id": "616f06449c3aa80d0fa8d084",<br>
+        "team": "Panathinaikos",<br>
+        "seasons": 63,<br>
+        "city": "Athens",<br>
+        "founded": 1908,<br>
+        "full_name": "Ποδοσφαιρική Ανώνυμη Εταιρία (Π.Α.Ε.) Παναθηναϊκός Αθλητικός Όμιλος (Π.Α.Ο.) Αθηνών Football Association Panathinaikos Athletic Club of Athens",<br>
+        "updated": "19/10/2021"<br>
+    },
     </code>`
     $('.teams').click(function(){
         $('.right').html(code_teams);
