@@ -82,7 +82,8 @@ app.get("/teams", (request, response) => {
   });
 });
 
-app.listen(5000, () => {
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
   MongoClient.connect(
     CONNECTION_URL,
     { useNewUrlParser: true },
