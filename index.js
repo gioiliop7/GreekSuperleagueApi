@@ -16,17 +16,17 @@ app.get('/', function (req, res) {
   res.send(console.log('SuperleagueGreeceApi by Giorgos Iliopoulos'))
 })
 
-app.get("/championships/:id", (request, response) => {
-  championships.findOne(
-    { _id: new ObjectId(request.params.id) },
-    (error, result) => {
-      if (error) {
-        return response.status(500).send(error);
-      }
-      response.send(result);
-    }
-  );
-});
+// app.get("/championships/:id", (request, response) => {
+//   championships.findOne(
+//     { _id: new ObjectId(request.params.id) },
+//     (error, result) => {
+//       if (error) {
+//         return response.status(500).send(error);
+//       }
+//       response.send(result);
+//     }
+//   );
+// });
 
 app.get("/championships", (request, response) => {
   championships.find({}).toArray((error, result) => {
@@ -110,21 +110,12 @@ app.listen(5000, () => {
 
     // Create a json and insert it into mongo db
 
-    //   const newItem = [
-    //     {
-    //       team: "Olympiacos",
-    //       seasons: 63,
-    //       city: "Piraeus,Athens",
-    //       founded: 1925,
-    //       full_name:
-    //         "Ολυμπιακός Σύνδεσμος Φιλάθλων Πειραιώς,Olympiakós Sýndesmos Filáthlo̱n Peiraió̱s",
-    //       updated: today,
-    //     },
-    //   ];
+      const newItem = [
+      ];
 
       // newItem.forEach(e => {
 
-      //     teams
+      //   championships
       //     .insertOne(e)
       //     .then((result) =>
       //       console.log(`Successfully inserted item with _id: ${result.insertedId}`)
