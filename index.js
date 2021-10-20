@@ -12,6 +12,10 @@ app.use(BodyParser.json());
 app.use(BodyParser.urlencoded({ extended: true }));
 var database, championships;
 
+app.get('/', function (req, res) {
+  res.send(console.log('SuperleagueGreeceApi by Giorgos Iliopoulos'))
+})
+
 app.get("/championships/:id", (request, response) => {
   championships.findOne(
     { _id: new ObjectId(request.params.id) },
@@ -61,16 +65,7 @@ app.get("/champions", (request, response) => {
 });
 
 app.get("/city", (request, response) => {
-  champions.find({}).toArray((error, result) => {
-    if (error) {
-      return response.status(500).send(error);
-    }
-    response.send(result);
-  });
-});
-
-app.get("/champions", (request, response) => {
-  champions.find({}).toArray((error, result) => {
+  city.find({}).toArray((error, result) => {
     if (error) {
       return response.status(500).send(error);
     }

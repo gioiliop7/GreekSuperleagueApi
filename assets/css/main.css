@@ -1,0 +1,96 @@
+@font-face {
+    font-family:'jetbrains-bold';
+    src: url('../webfonts/JetBrainsMono-Bold.woff2');
+}
+
+@font-face{
+    font-family:'jetbrains-regular';
+    src: url('../webfonts/JetBrainsMono-Regular.woff2');
+}
+
+@font-face{
+    font-family:'jetbrains-thin';
+    src: url('../webfonts/JetBrainsMono-Thin.woff2');
+}
+
+@font-face{
+    font-family:'jetbrains-light';
+    src: url('../webfonts/JetBrainsMono-Light.woff2');
+}
+
+@font-face{
+    font-family:'jetbrains-medium';
+    src: url('../webfonts/JetBrainsMono-Medium.woff2');
+}
+
+body{
+    font-family: 'jetbrains-regular'!important;
+}
+
+.version{
+    background:#cacaca;
+    color:#fff;
+    border-radius:15px;
+    font-family: 'jetbrains-bold';
+    font-size: 15px;
+    padding:10px;
+}
+
+.sllogo{
+    max-width: 200px;
+    margin-top:20px;
+    text-align: center;
+}
+
+.get{
+    width:fit-content;
+    padding:20px 40px;
+    background:greenyellow;
+    color:black;
+    border-radius:10px;
+}
+
+.test-row{
+    background-color: #2c1b56;
+    color:#fff;
+    text-align: center;
+    border-radius:15px;
+}
+
+.right{
+    border-left:6px solid greenyellow;
+}
+
+.left,.right{
+    padding:40px 0px;
+    height:100%;
+}
+
+.left p{
+    cursor:pointer;
+}
+
+.github{
+    position: absolute;
+    right:30px;
+    top:30px;
+    color:#000;
+    transition:all ease 0.2s;
+    padding:25px;
+    border-radius:15px;
+}
+
+.github:hover{
+    text-decoration: none;
+    color:#fff;
+    background:#cacaca;
+}
+
+.github-logo{
+    max-width: 150px;
+}
+
+.footer-logo{
+    max-width: 280px;
+    width:100%;
+}
